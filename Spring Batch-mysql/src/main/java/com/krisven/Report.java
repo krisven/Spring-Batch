@@ -7,7 +7,6 @@ public class Report {
     private String Clicks;
     private String Earning;
 
-
     public String getDate() {
         return Date;
     }
@@ -38,5 +37,10 @@ public class Report {
 
     public void setEarning(String earning) {
         Earning = earning;
+    }
+
+    @Override
+    public String toString() {
+        return "date:" + Date + ",imperssions:" + Impressions + ",clicks:" + Clicks + ",earning:" + Earning;
     }
 }
